@@ -12,10 +12,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<!-- Navigation links -->
-<%= link_to "Home", root_path %>
-<%= link_to "About", about_path %>
-<%= yield %>
+	<!-- Navigation links -->
+	<%= render 'layouts/header' %>
+
+
+
+	<div class = "container">	
+		<!-- Flash Message -->
+		<% flash.each do |name, msg| %>
+	     <%= content_tag(:div, msg, class: "alert alert-#{name}") %>
+		<% end %>
+
+		<!-- Render Content -->
+		<%= yield %>
+	</div>
 
 </body>
 </html>

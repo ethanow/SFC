@@ -20,6 +20,11 @@ gem 'coffee-rails', '~> 4.1.0'
 # Use Bootstrap-sass
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 
+# Use devise
+gem 'devise', '~> 3.5', '>= 3.5.6'
+# Use Figaro
+gem 'figaro', '~> 1.1', '>= 1.1.1'
+
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
